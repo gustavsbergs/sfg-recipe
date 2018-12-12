@@ -19,6 +19,8 @@ public class CategoryToCategoryCommandTest {
     public void testNullObject() throws Exception{
         assertNull(converter.convert(null));
     }
+
+    @Test
     public void testEmptyObject() throws Exception{
         assertNotNull(converter.convert(new Category()));
     }
